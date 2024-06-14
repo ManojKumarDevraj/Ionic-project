@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Question 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedOption" (ionChange)="onOptionSelected($event.detail.value)">
+      <ion-list-header>
+        <ion-label>Choose an option:</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Option X</ion-label>
+        <ion-radio slot="start" value="optionX"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Option Y</ion-label>
+        <ion-radio slot="start" value="optionY"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Option Z</ion-label>
+        <ion-radio slot="start" value="optionZ"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>
